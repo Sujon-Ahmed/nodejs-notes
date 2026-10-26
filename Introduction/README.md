@@ -33,3 +33,27 @@ Node.js excels at handling many simultaneous connections with minimal overhead, 
 - Server-side web applications
 
 Its non-blocking, event-driven architecture makes it highly efficient for I/O-heavy workloads.
+
+### Asynchronous Programming
+
+Node.js uses **asynchronous** (non-blocking) programming.
+
+This means it can keep working while waiting for tasks like reading files or talking to a database.
+
+With asynchronous code, Node.js can handle many things at once-making it fast and efficient.
+
+```js
+// Load the filesystem module
+const fs = require("fs");
+
+// Read file asynchronously
+fs.readFile("myfile.txt", "utf8", (err, data) => {
+  if (err) {
+    console.error("Error reading file: " + err);
+    return;
+  }
+  console.log("File content: " + data);
+});
+
+console.log("Reading file... (this runs first!)");
+```
