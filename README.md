@@ -55,7 +55,7 @@ console.log(os.platform());
 
 It helps you install and manage third-party packages (libraries) to add more features to your apps.
 
-****Example: Installing a Package****
+\***\*Example: Installing a Package\*\***
 
 ```bash
 npm install express
@@ -67,3 +67,10 @@ const app = express();
 app.get("/", (req, res) => res.send("Hello World!"));
 app.listen(8080);
 ```
+
+### Table of Contents
+
+| Topic                                            | Description                                       |
+| ------------------------------------------------ | ------------------------------------------------- |
+| [Node.js Introduction](./Introduction/README.md) | An introduction to Node.js and its core concepts. |
+| [Node.js Modules](./Modules/README.md)           | Learn about Node.js modules and how to use them.  |
