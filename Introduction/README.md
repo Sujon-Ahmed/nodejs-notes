@@ -57,3 +57,40 @@ fs.readFile("myfile.txt", "utf8", (err, data) => {
 
 console.log("Reading file... (this runs first!)");
 ```
+
+In this example:
+
+- We load the built-in fs module
+- We call readFile to read a file
+- Node.js continues to the next line while reading the file
+- When the file is read, our callback function runs
+
+This non-blocking behavior lets Node.js handle many requests efficiently.
+
+### What Can Node.js Do?
+
+- Web Servers: Create fast, scalable network applications
+- File Operations: Read, write, and manage files on the server
+- Database Interaction: Work with databases like MongoDB, MySQL, and more
+- APIs: Build RESTful services and GraphQL APIs
+- Real-time: Handle WebSockets for live applications
+- CLI Tools: Create command-line applications
+
+```js
+const http = require("http");
+
+http
+  .createServer((req, res) => {
+    res.writeHead(200, { "content-type": "text/plain" });
+    res.end("Hello World!");
+  })
+  .listen(8080);
+```
+
+### What is a Node.js File?
+
+Node.js files contain code that runs on the server. They usually have the .js extension and can be started with the node command.
+
+- Node.js files run tasks when certain events happen (like a web request)
+- They must be started on the server to have any effect
+- They use JavaScript syntax
