@@ -48,3 +48,22 @@ You can use them by importing them with `require()`.
 const os = require("os");
 console.log(os.platform());
 ```
+
+## What is npm?
+
+**npm** is the package manager for Node.js.
+
+It helps you install and manage third-party packages (libraries) to add more features to your apps.
+
+****Example: Installing a Package****
+
+```bash
+npm install express
+```
+
+```js
+const express = require("express");
+const app = express();
+app.get("/", (req, res) => res.send("Hello World!"));
+app.listen(8080);
+```
