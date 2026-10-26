@@ -70,7 +70,7 @@ app.listen(8080);
 
 ### Table of Contents
 
-| Topic                                            | Description                                       |
-| ------------------------------------------------ | ------------------------------------------------- |
-| [Node.js Introduction](./Introduction/README.md) | An introduction to Node.js and its core concepts. |
-| [Node.js Modules](./Modules/README.md)           | Learn about Node.js modules and how to use them.  |
+| Topic                                            | Description                                               |
+| ------------------------------------------------ | --------------------------------------------------------- |
+| [Node.js Introduction](./Introduction/README.md) | An introduction to Node.js and its core concepts.         |
+| [Node.js Requirements](./Requirements/README.md) | Learn about the requirements for developing with Node.js. |
